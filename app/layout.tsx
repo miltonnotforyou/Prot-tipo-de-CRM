@@ -2,8 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css'; // Global styles
 import { ThemeProvider } from '@/components/theme-provider';
-import { Sidebar } from '@/components/sidebar';
-import { TopNav } from '@/components/top-nav';
+import { LayoutWrapper } from '@/components/layout-wrapper';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -25,15 +24,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           enableSystem
           disableTransitionOnChange
         >
-          <div className="flex h-screen overflow-hidden">
-            <Sidebar />
-            <div className="flex-1 flex flex-col overflow-hidden">
-              <TopNav />
-              <main className="flex-1 overflow-y-auto bg-background-light dark:bg-background-dark">
-                {children}
-              </main>
-            </div>
-          </div>
+          <LayoutWrapper>
+            {children}
+          </LayoutWrapper>
         </ThemeProvider>
       </body>
     </html>

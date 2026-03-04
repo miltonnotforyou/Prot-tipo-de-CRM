@@ -36,7 +36,7 @@ const data = [
 
 export default function Dashboard() {
   return (
-    <div className="p-8 max-w-7xl mx-auto space-y-8">
+    <div className="p-4 md:p-8 max-w-7xl mx-auto space-y-8">
       {/* Welcome Header */}
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>

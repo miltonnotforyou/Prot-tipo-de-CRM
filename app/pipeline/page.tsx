@@ -14,9 +14,9 @@ export default function Pipeline() {
   return (
     <div className="flex flex-col h-full bg-background-light dark:bg-background-dark">
       {/* Toolbar & Title */}
-      <div className="flex flex-wrap justify-between items-end gap-3 p-8">
+      <div className="flex flex-wrap justify-between items-end gap-3 p-4 md:p-8">
         <div className="flex flex-col gap-1">
-          <h1 className="text-slate-900 dark:text-slate-100 text-4xl font-black leading-tight tracking-tight">
+          <h1 className="text-slate-900 dark:text-slate-100 text-3xl md:text-4xl font-black leading-tight tracking-tight">
             Pipeline de Vendas
           </h1>
           <p className="text-slate-500 dark:text-slate-400 text-sm">
@@ -32,7 +32,7 @@ export default function Pipeline() {
       </div>
 
       {/* Filters */}
-      <div className="flex gap-3 px-8 pb-6 overflow-x-auto">
+      <div className="flex gap-3 px-4 md:px-8 pb-6 overflow-x-auto">
         <button className="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-4 shadow-sm">
           <Calendar className="text-slate-500 size-4" />
           <p className="text-slate-700 dark:text-slate-200 text-sm font-medium">
@@ -54,7 +54,7 @@ export default function Pipeline() {
       </div>
 
       {/* Kanban Board */}
-      <div className="flex flex-1 gap-4 px-8 pb-8 overflow-x-auto min-h-[600px]">
+      <div className="flex flex-1 gap-4 px-4 md:px-8 pb-8 overflow-x-auto min-h-[600px]">
         {/* Column: Prospecção */}
         <div className="flex flex-col min-w-[300px] w-[300px] gap-4">
           <div className="flex items-center justify-between px-2">

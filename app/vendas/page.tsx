@@ -76,7 +76,7 @@ const recentSales = [
 
 export default function Vendas() {
   return (
-    <div className="p-8 max-w-7xl mx-auto space-y-6">
+    <div className="p-4 md:p-8 max-w-7xl mx-auto space-y-6">
       {/* Page Title & Actions */}
       <div className="flex flex-col gap-6">
         <div className="flex flex-wrap items-end justify-between gap-4">
