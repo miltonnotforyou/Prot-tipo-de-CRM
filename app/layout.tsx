@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'SalesTeam CRM',
+  title: 'MNSILVA CRM',
   description: 'Modern CRM Dashboard',
 };
 
