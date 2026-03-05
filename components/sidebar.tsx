@@ -33,7 +33,7 @@ export function Sidebar({ isOpen, setIsOpen }: SidebarProps) {
   const router = useRouter();
 
   const handleLogout = () => {
-    document.cookie = "auth-token=; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT";
+    document.cookie = "auth-token=; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT; SameSite=None; Secure";
     router.push("/login");
     router.refresh();
   };

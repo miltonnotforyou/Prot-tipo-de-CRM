@@ -19,7 +19,7 @@ export default function Login() {
     // Mock authentication
     setTimeout(() => {
       if (email === "admin@salesteam.com" && password === "admin123") {
-        document.cookie = "auth-token=true; path=/; max-age=86400";
+        document.cookie = "auth-token=true; path=/; max-age=86400; SameSite=None; Secure";
         router.push("/");
         router.refresh();
       } else {
